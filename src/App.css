@@ -4,14 +4,18 @@
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-html {
-	background-color: #f7f7f7;
+body {
+  background-color: white;
 }
 
+#navbar{
+  box-shadow: 0px 0px 5px;
+}
 .app-name {
 	font-size: 2.3rem;
-	color: rgb(17, 144, 0);
-	margin-bottom: 16px;
+	color: teal;
+	padding: 15px;
+  font-weight: bold;
 }
 
 .App {
@@ -19,25 +23,26 @@ html {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 600px;
-	min-height: 440px;
-	background-color: rgb(255, 255, 255);
+	width: 800px;
+	min-height: 450px;
+	background-color: white;
 	text-align: center;
-	margin: 128px auto;
-	border-radius: 10px;
+	margin: 100px auto;
+	border-radius: 5px;
 	padding-bottom: 32px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0px 5px #0000008d;
 }
 
 .city-search {
 	width: 100%;
 	max-width: 400px;
 	box-sizing: border-box;
-	border: 2px solid #b2b0b0;
+  border: none;
+	box-shadow: 0px 0px 1px;
 	outline: none;
-	border-radius: 10px;
+	border-radius: 5px;
 	font-size: 16px;
-	background-color: #ffffff;
+	background-color: white ;
 	background-position: 10px 12px;
 	background-repeat: no-repeat;
 	padding: 12px 40px 12px 20px;
@@ -51,15 +56,15 @@ html {
 }
 
 .city-name {
-	font-size: 1.5rem;
-	color: #444;
-	margin-bottom: 8px;
+	font-size: 1.2rem;
+	color: black;
+  padding: 15px;
 }
 
 .date {
 	font-size: 1.25em;
-	font-weight: 500;
-	color: #777;
+	font-weight: 600;
+	color: teal;
 }
 
 .icon-temp {
@@ -75,8 +80,8 @@ html {
 }
 
 .des-wind {
-	font-weight: 500;
-	color: #666;
+	font-weight: 600;
+	color: teal;
 }
 
 .error-message {
@@ -105,8 +110,52 @@ html {
 }
 
 .weather-icon img {
-	width: 100px;
-	height: 100px;
+	width: 130px;
+	height: 130px;
 	border-radius: 50%;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px #000000d7;
+}
+@media(max-width:900px){
+  .App {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media(max-width:700px){
+  .App {
+    width: 400px;
+    height: 400px;
+  }
+}
+.demo{
+  background-color: #252424;
+  .App{
+    background-color: #252424;
+    box-shadow: 0px 0px 5px white;
+  }
+  .city-name{
+    color: white;
+  }
+  .icon-temp {
+    color: white;
+  }
+  .city-search{
+    background-color: transparent;
+    box-shadow: 0px 0px 2px white;
+  }
+  .city-search::placeholder{
+    color: aliceblue;
+  }
+  .city-search:focus{
+    color: white;
+  }
+  #navbar{
+    box-shadow: 0px 0px 5px white;
+  }
+  #head-name{
+    color: white;
+  }
+  span{
+    color: white;
+  }
 }

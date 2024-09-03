@@ -6,6 +6,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFrown } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
+import TopNav from './TopNav';
 
 function WeatherApp() {
 	const [input, setInput] = useState('');
@@ -73,6 +74,8 @@ function WeatherApp() {
 	};
 
 	return (
+    <>
+    <TopNav/>
 		<div className="App">
 			<h1 className="app-name">
 				Weather App
@@ -109,7 +112,7 @@ function WeatherApp() {
 				<div>
 					<div className="city-name">
 						<h2>
-							{weather.data.name}, <span>{weather.data.sys.country}</span>
+							{weather.data.name}, <span>{weather.data.sys.state}</span> <span>{weather.data.sys.country}</span>
 						</h2>
 					</div>
 					<div className="date">
@@ -131,6 +134,7 @@ function WeatherApp() {
 				</div>
 			)}
 		</div>
+    </>
 	);
 }
 
