@@ -29,7 +29,7 @@ const mode = () =>{
           <span className="pi pi-linkedin"></span>
            </Navbar.Brand>
           <Navbar.Brand >
-          <span className="pi pi-sun" onClick={mode}></span>
+          <span className="pi pi-sun" onClick={mode} style={{cursor:'pointer'}}></span>
            </Navbar.Brand>
           </Form>
         </Navbar.Collapse>

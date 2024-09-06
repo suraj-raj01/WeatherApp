@@ -90,6 +90,7 @@ function WeatherApp() {
 					onChange={(event) => setInput(event.target.value)}
 					onKeyPress={search}
 				/>
+				
 			</div>
 			{weather.loading && (
 				<>

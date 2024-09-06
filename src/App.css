@@ -5,17 +5,18 @@
 }
 
 body {
-  background-color: white;
+	background-color: white;
 }
 
-#navbar{
-  box-shadow: 0px 0px 5px;
+#navbar {
+	box-shadow: 0px 0px 2px;
 }
+
 .app-name {
 	font-size: 2.3rem;
-	color: teal;
+	color: green;
 	padding: 15px;
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .App {
@@ -30,25 +31,30 @@ body {
 	margin: 100px auto;
 	border-radius: 5px;
 	padding-bottom: 32px;
-	box-shadow: 0 0px 5px #0000008d;
+	border: 2px solid #d5d0d0ae;
+	/* box-shadow: 0 0px 5px #0000008d; */
 }
 
 .city-search {
 	width: 100%;
 	max-width: 400px;
 	box-sizing: border-box;
-  border: none;
+	border: none;
 	box-shadow: 0px 0px 1px;
 	outline: none;
 	border-radius: 5px;
 	font-size: 16px;
-	background-color: white ;
+	background-color: white;
 	background-position: 10px 12px;
 	background-repeat: no-repeat;
 	padding: 12px 40px 12px 20px;
 	-webkit-transition: width 0.4s ease-in-out;
 	transition: width 0.4s ease-in-out;
 	color: #333;
+}
+
+.search-bar {
+	display: flex;
 }
 
 .city-search:focus {
@@ -58,19 +64,19 @@ body {
 .city-name {
 	font-size: 1.2rem;
 	color: black;
-  padding: 15px;
+	padding: 15px;
 }
 
 .date {
 	font-size: 1.25em;
 	font-weight: 600;
-	color: teal;
+	color: black;
 }
 
 .icon-temp {
 	font-size: 3rem;
 	font-weight: 700;
-	color: #1e2432;
+	color: #1b2844;
 	text-align: center;
 }
 
@@ -81,7 +87,7 @@ body {
 
 .des-wind {
 	font-weight: 600;
-	color: teal;
+	color: black;
 }
 
 .error-message {
@@ -115,47 +121,67 @@ body {
 	border-radius: 50%;
 	box-shadow: 0 4px 8px #000000d7;
 }
-@media(max-width:900px){
-  .App {
-    width: 600px;
-    height: 400px;
-  }
+
+@media(max-width:900px) {
+	.App {
+		width: 600px;
+		height: 400px;
+	}
 }
-@media(max-width:700px){
-  .App {
-    width: 400px;
-    height: 400px;
-  }
+
+@media(max-width:700px) {
+	.App {
+		width: 400px;
+		height: 400px;
+	}
+	#navbar{
+		background-color: orangered;
+	}
 }
-.demo{
-  background-color: #252424;
-  .App{
-    background-color: #252424;
-    box-shadow: 0px 0px 5px white;
-  }
-  .city-name{
-    color: white;
-  }
-  .icon-temp {
-    color: white;
-  }
-  .city-search{
-    background-color: transparent;
-    box-shadow: 0px 0px 2px white;
-  }
-  .city-search::placeholder{
-    color: aliceblue;
-  }
-  .city-search:focus{
-    color: white;
-  }
-  #navbar{
-    box-shadow: 0px 0px 5px white;
-  }
-  #head-name{
-    color: white;
-  }
-  span{
-    color: white;
-  }
+
+.demo {
+	background-color: #252424;
+
+	.App {
+		background-color: #252424;
+		border: 2px solid #434242ae;
+	}
+	.app-name{
+		color: orangered;
+	}
+	.city-name {
+		color: white;
+	}
+
+	.icon-temp {
+		color: white;
+	}
+	.des-wind {
+		color: white;
+	}
+
+	.city-search {
+		background-color: transparent;
+		box-shadow: 0px 0px 2px white;
+	}
+
+	.city-search::placeholder {
+		color: aliceblue;
+	}
+
+	.city-search:focus {
+		color: white;
+	}
+
+	#navbar {
+		box-shadow: 0px 0px 2px white;
+	}
+
+	#head-name {
+		color: white;
+	}
+
+	span {
+		color: white;
+	}
 }
