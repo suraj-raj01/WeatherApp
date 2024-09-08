@@ -1,5 +1,3 @@
-//App.js
-
 import { Oval } from 'react-loader-spinner';
 import React, { useState } from 'react';
 import axios from 'axios';
@@ -90,7 +88,7 @@ function WeatherApp() {
 					onChange={(event) => setInput(event.target.value)}
 					onKeyPress={search}
 				/>
-				
+
 			</div>
 			{weather.loading && (
 				<>

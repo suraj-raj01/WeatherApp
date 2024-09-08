@@ -76,13 +76,14 @@ body {
 .icon-temp {
 	font-size: 3rem;
 	font-weight: 700;
-	color: #1b2844;
+	color: orangered;
 	text-align: center;
 }
 
 .deg {
 	font-size: 1.3rem;
 	vertical-align: super;
+	color: orangered;
 }
 
 .des-wind {
@@ -153,9 +154,6 @@ body {
 		color: white;
 	}
 
-	.icon-temp {
-		color: white;
-	}
 	.des-wind {
 		color: white;
 	}
